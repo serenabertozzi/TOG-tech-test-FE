@@ -4,6 +4,10 @@ It was a very interesting and challenging project, I feel more confident with Re
 
 I've worked on this on different timeframes this weekend, since I also had to move from my apartment, but I definitely enjoyed the process a lot.
 
+# Deployed on Heroku
+
+[Link to deployement](https://afternoon-temple-15679.herokuapp.com/).
+
 # Process and notes
 
 - Missed a commit for the hook creations, I've had some problems installing React-Bootstrap, with conflicting packages. Got it to work in the end, but I didn't commit the "WorkSpaceAPI" file.
@@ -17,5 +21,3 @@ I've worked on this on different timeframes this weekend, since I also had to mo
 # What I would have done
 
 Given more time, I would have focused more on the styling aspect, especially changing the different font style as well as the responsivness at different screen sizes, which isn't perfect.
-
-I didn't manage to do the deployement yet but might try this week just to add an extra step.
