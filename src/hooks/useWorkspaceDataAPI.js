@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export const WorkspaceDataAPI = () => {
   const [currentData, updateData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const getData = async () => {
     const url = "https://mocki.io/v1/0a8a3472-1336-467a-ae37-8ddf0edb26ae";
@@ -9,9 +10,10 @@ export const WorkspaceDataAPI = () => {
     const json = await res.json();
 
     updateData(json);
+    setLoading(false);
   };
 
   useEffect(() => getData(), []);
 
-  return [currentData];
+  return [currentData, loading];
 };

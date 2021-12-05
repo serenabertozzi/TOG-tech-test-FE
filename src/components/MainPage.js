@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import WorkspaceCard from "./WorkspaceCard";
 
 const MainPage = (props) => {
-  const [currentData] = WorkspaceDataAPI();
+  const [currentData, loading] = WorkspaceDataAPI();
 
   const WorkspaceInfo = () => {
     currentData.workspaces.map((workspace) => {
@@ -23,21 +23,11 @@ const MainPage = (props) => {
         </Col>
       </Row>
       <Row>
-        {currentData.workspaces.map((workspace) => {
-          return (
-            <Col xs={12} lg={4}>
-              <Card style={{ width: "24rem" }} className="my-2 mx-2">
-                <Card.Img variant="top" src={props.workspace.image} />
-                <Card.Body>
-                  <Card.Title className="c-title">
-                    {props.workspace.name}
-                  </Card.Title>
-                  <Card.Text>{props.workspace.address}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          );
-        })}
+        {loading
+          ? ""
+          : currentData.workspaces.map((workspace) => {
+              return <WorkspaceCard workspace={workspace} />;
+            })}
       </Row>
     </Container>
   );
