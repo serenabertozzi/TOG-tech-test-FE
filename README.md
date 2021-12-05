@@ -2,6 +2,8 @@
 
 It was a very interesting and challenging project, I feel more confident with React and I'm looking forward to know more about it and speeding up my coding process as well.
 
+I've worked on this on different timeframes this weekend, since I also had to move from my apartment, but I definitely enjoyed the process a lot.
+
 # Process and notes
 
 - Missed a commit for the hook creations, I've had some problems installing React-Bootstrap, with conflicting packages. Got it to work in the end, but I didn't commit the "WorkSpaceAPI" file.
