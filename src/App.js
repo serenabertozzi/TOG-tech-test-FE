@@ -1,11 +1,18 @@
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import './App.css';
+import MainPage from './components/MainPage'
+
 
 
 function App() {
   return (
-<div>
-
-</div>    );
+    <React.Fragment>
+      <div className="App">
+        <MainPage />
+      </div>
+      </React.Fragment>
+       );
 }
 
 export default App;
