@@ -1,0 +1,23 @@
+.custom-nav {
+  padding-top: 5px;
+}
+
+.nav-logo {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-nav-item {
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+}
+
+.custom-title {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.custom-paragraph {
+  font-size: 0.9em;
+}
